@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>滤镜使用</title>
+		<style type="text/css">
+			img{
+				width: 400px;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+				transition: all 5s;
+			}
+			/* 滤镜属性 -wikite-filter*/
+			/* 灰度设置 */
+			.img1{
+				-webkit-filter:grayscale(1);
+			}
+			
+			/* 亮度设置 默认值为1，正常度100% */
+			.img2{
+				-webkit-filter: brightness(2);
+			}
+			
+			/* 褐色属性 sepia  */
+			.img3{
+				-webkit-filter: sepia(1);
+			}
+			
+			/* 模糊度 blur */
+			.img4{
+				-webkit-filter: blur(5px);
+			}
+			
+			/* 对比度 contrast */
+			.img5{
+				-webkit-filter:contrast(3);
+			}
+			/* 饱和度 saturate */
+			.img6{
+				-webkit-filter: saturate(3);
+			}
+			/* 反向 invert */
+			.img7{
+				-webkit-filter: invert(1);
+			}
+			
+			/* 色相旋转 hue-rotate 0deg-360deg */
+			.img8{
+				-webkit-filter: hue-rotate(123deg);
+			}
+			img:hover{
+				-webkit-filter: none;
+			}
+			
+			/* 实现素描效果 */
+			.img9{
+				-webkit-filter: grayscale(1) brightness(3) blur(5px);
+				transition: all 15s;
+			}
+			.img9:hover{
+				-webkit-filter: grayscale(1);
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/yangzi.jpg" class="img1"/>
+		<img src="img/yangzi.jpg" class="img2"/>
+		<img src="img/yangzi.jpg" class="img3"/>
+		<img src="img/yangzi.jpg" class="img4"/>
+		<img src="img/yangzi.jpg" class="img5"/>
+		<img src="img/yangzi.jpg" class="img6"/>
+		<img src="img/yangzi.jpg" class="img7"/>
+		<img src="img/yangzi.jpg" class="img8"/>
+		<img src="img/yangzi.jpg"  class="img9"/>
+	</body>
+</html>
